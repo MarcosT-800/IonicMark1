@@ -15,29 +15,30 @@
         <ion-buttons slot="start">
           <ion-menu-button></ion-menu-button>
         </ion-buttons>
-        <ion-title></ion-title>
+        <ion-title>Menu</ion-title>
       </ion-toolbar>
     </ion-header>
-    <ion-content> 
-      <Contente />
-     </ion-content>
+    <ion-content class="ion-padding">
+      <Content />
+    </ion-content>
   </ion-page>
 </template>
 
 <script lang="ts">
-  import { IonButtons, IonContent, IonHeader, IonMenu, IonMenuButton, IonPage, IonTitle, IonToolbar } from '@ionic/vue';
-  import { defineComponent } from 'vue';
+import { IonButtons, IonContent, IonHeader, IonMenu, IonItem, IonLabel, IonList, IonMenuButton, IonPage, IonTitle, IonToolbar } from '@ionic/vue';
+import { defineComponent } from 'vue';
 
-  export default defineComponent({
-    components: {
-      IonButtons,
-      IonContent,
-      IonHeader,
-      IonMenu,
-      IonMenuButton,
-      IonPage,
-      IonTitle,
-      IonToolbar,
-    },
-  });
+export default defineComponent({
+  components: {
+    IonButtons,
+    IonContent,
+    IonHeader,
+    IonMenu,
+    IonMenuButton,
+    IonPage,
+    IonTitle,
+    IonToolbar,
+    IonItem, IonLabel, IonList
+  },
+});
 </script>
