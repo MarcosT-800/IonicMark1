@@ -27,7 +27,6 @@
 <script lang="ts">
   import { IonButtons, IonContent, IonHeader, IonMenu, IonMenuButton, IonPage, IonTitle, IonToolbar } from '@ionic/vue';
   import { defineComponent } from 'vue';
-  import Contente from '../components/Dashboard/Content.vue';
 
   export default defineComponent({
     components: {
