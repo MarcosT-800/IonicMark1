@@ -38,7 +38,6 @@
       IonPage,
       IonTitle,
       IonToolbar,
-      Contente
     },
   });
 </script>
