@@ -1,39 +1,32 @@
 <template>
-    <ion-menu content-id="main-content">
-      <ion-header>
+    <ion-page>
+      <ion-header :translucent="true">
         <ion-toolbar>
-          <ion-title>Menu Content</ion-title>
+          <ion-title>Blank</ion-title>
         </ion-toolbar>
       </ion-header>
-      <ion-content class="ion-padding">This is the menu content.</ion-content>
-    </ion-menu>
-    <ion-page id="main-content">
-      <ion-header>
-        <ion-toolbar>
-          <ion-buttons slot="start">
-            <ion-menu-button></ion-menu-button>
-          </ion-buttons>
-          <ion-title>Menu</ion-title>
-        </ion-toolbar>
-      </ion-header>
-      <ion-content class="ion-padding"> Tap the button in the toolbar to open the menu. </ion-content>
+  
+      <ion-content :fullscreen="true">
+        <ion-header collapse="condense">
+          <ion-toolbar>
+            <ion-title size="large">Blank</ion-title>
+          </ion-toolbar>
+        </ion-header>
+  
+        <div id="container">
+          <strong class="text-red-700">Ready to create an app?</strong>
+          <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+        </div>
+      </ion-content>
     </ion-page>
   </template>
   
-  <script lang="ts">
-    import { IonButtons, IonContent, IonHeader, IonMenu, IonMenuButton, IonPage, IonTitle, IonToolbar } from '@ionic/vue';
-    import { defineComponent } from 'vue';
-  
-    export default defineComponent({
-      components: {
-        IonButtons,
-        IonContent,
-        IonHeader,
-        IonMenu,
-        IonMenuButton,
-        IonPage,
-        IonTitle,
-        IonToolbar,
-      },
-    });
+  <script setup lang="ts">
+  import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/vue';
+  import 'tailwindcss/tailwind.css';
   </script>
+  
+  <style scoped>
+
+  </style>
+  
